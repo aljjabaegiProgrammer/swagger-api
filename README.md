@@ -1,4 +1,8 @@
 #Swagger setting options
+```
+springboot 3.2.4
+springdoc-openapi-starter-webmvc-ui 2.2.0
+```
 ---
 
 ## 의존성 주입
