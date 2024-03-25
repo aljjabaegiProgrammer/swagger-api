@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: swagger
+server:
+  port: 8080
+  servlet:
+    context-path: /swagger-api
+springdoc:
+  api-docs:
+    path: /api-docs
+  default-consumes-media-type: application/json
+  default-produces-media-type: application/json
+  swagger-ui:
+#    path: /swagger-ui.html
+    doc-expansion: none
+    filter: true
+    operations-sorter: method
+    display-request-duration: true
+    display-operation-id: true
+    try-it-out-enabled: true
