@@ -52,6 +52,9 @@ import java.util.Map;
 @Configuration
 public class SwaggerConfig {
 
+    /**
+     * Grouping version 1
+     */
     @Bean
     public GroupedOpenApi version1Api() {
         return GroupedOpenApi.builder()
@@ -60,6 +63,9 @@ public class SwaggerConfig {
                 .build();
     }
 
+    /**
+     * Grouping version 2
+     */
     @Bean
     public GroupedOpenApi version2Api() {
         return GroupedOpenApi.builder()
