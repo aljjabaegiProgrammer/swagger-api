@@ -5,6 +5,7 @@ import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import jakarta.validation.Valid;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -54,7 +55,7 @@ public class MemberController {
             """,
             operationId = "API-001-02"
     )
-    public ResponseEntity<MemberCreateResponse> createMember(@RequestBody MemberCreateRequest memberCreateRequest) {
+    public ResponseEntity<MemberCreateResponse> createMember(@RequestBody @Valid MemberCreateRequest memberCreateRequest) {
         return ResponseEntity.ok(new MemberCreateResponse("geonlee", "이건", "2024-03-24 00:00:00"));
     }
 
